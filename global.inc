@@ -9,7 +9,6 @@ $db->exec("CREATE UNIQUE INDEX IF NOT EXISTS idx_songstrings ON songdb(combined)
 $db->exec("CREATE TABLE IF NOT EXISTS requests (request_id integer PRIMARY KEY AUTOINCREMENT, artist TEXT, title TEXT, singer TEXT, request_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP)");
 
 $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-$accepting = true;
 $songdbtable = "songdb";
 $requeststable = "requests";
 
@@ -29,9 +28,6 @@ function siteheader($title)
     			}
 		</script>
 	      </head><body>";
-
-
-
 }
 
 function sitefooter() {
@@ -51,7 +47,16 @@ function navbar($backurl)
 function setAccepting($accepting)
 {
 	global $db;
-	$db->exec("UPDATE state SET accepting=$accepting");
+	if ($accepting == 1)
+	{
+		echo("setting accepting to 1");
+		$db->exec("UPDATE state SET accepting=1");
+	}
+	else
+	{
+		echo("setting accepting to 0");
+		$db->exec("UPDATE state SET accepting=0");
+	}
 }
 
 function getAccepting()
@@ -60,7 +65,7 @@ function getAccepting()
 	$accepting = false;
         foreach ($db->query("SELECT accepting FROM state LIMIT 1") as $row)
         {
-                $accepting = (bool)$row['accepting'];
+                $accepting = $row['accepting'];
         }
 	return $accepting;
 }
