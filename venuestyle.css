@@ -1,0 +1,98 @@
+@import url(http://fonts.googleapis.com/css?family=Scada);
+@import url(http://fonts.googleapis.com/css?family=Audiowide);
+
+body
+{
+	text-align: center;
+	font-family: 'Scada', sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	background-color: white;
+	color: black;
+	padding-top: 60px;
+}
+input[type=text] {
+    	border: 2px solid black;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-right: 5px;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+p.info
+{
+	font-size: 1.0em;
+}
+div.navbar
+{
+#        height: 50px;
+	width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px
+        width: 100%;
+        background-color: white;
+        color: black;
+        text-align: left;
+	border-style: solid;
+	border-width: 0px 0px 2px 0px;
+}
+a.navbar
+{
+	color: white;
+	text-decoration: none;
+}
+div.spacer
+{
+	position: relative;
+	width: 90%;
+	top: 0;
+	height: 50px;
+}
+table
+{
+	margin: auto;
+	min-width: 60%;
+	border: 1px;
+}
+td.result
+{
+	color: black;
+	font-size: 1.6em;
+	font-weight: bold;
+	text-align: left;
+	padding: 20px;
+	border-spacing: 10px;
+	border-style: solid;
+	border-size: 2px;
+}
+
+input[type=button], input[type=submit], input[type=reset], a.button {
+    background-color: white;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    font-weight: bold;
+    color: black;
+    padding: 8px 20px;
+    margin-top: 12px;
+    text-decoration: none;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.backbtn {
+	position: fixed;
+	top: 75px;
+	left: 5px;
+}
+.title {
+	font-size: 2em;
+	font-family: Audiowide, cursive;
+	float: right;
+	margin-right: 10px;
+	text-shadow: 4px 4px 4px #aaa;
+}
