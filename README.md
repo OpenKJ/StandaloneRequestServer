@@ -1,6 +1,8 @@
 # OpenKJ Standalone Request Server
 Standalone basic single-venue request server implementation for use with OpenKJ.
 
+Note: This is intended for people who already know how to configure and manage their own webservers and have a general familiarity with php.  The easier and more feature rich option is to use the hosted service available at https://okjsongbook.com
+
 Requires php
 
 Can be run under either php's built in web server or under any web server with php support like apache or nginx.
