@@ -12,7 +12,7 @@ body
 	padding-top: 60px;
 }
 input[type=text] {
-    	border: 2px solid black;
+	border: 2px solid black;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	margin-right: 5px;
@@ -25,19 +25,19 @@ p.info
 }
 div.navbar
 {
-#        height: 50px;
+    height: 50px;
 	width: 100%;
-        position: fixed;
-        left: 0;
-        top: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
 	padding-left: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	padding-right: 5px
-        width: 100%;
-        background-color: white;
-        color: black;
-        text-align: left;
+	padding-right: 5px;
+	width: 100%;
+	background-color: white;
+	color: black;
+	text-align: left;
 	border-style: solid;
 	border-width: 0px 0px 2px 0px;
 }
@@ -68,7 +68,8 @@ td.result
 	padding: 20px;
 	border-spacing: 10px;
 	border-style: solid;
-	border-size: 2px;
+	border-width: 2px;
+	cursor: pointer;
 }
 
 input[type=button], input[type=submit], input[type=reset], a.button {

@@ -1,0 +1,10 @@
+---
+  version: '3'
+  services:
+    songbook:
+      image: php:7.4-apache
+      container_name: songbook
+      volumes:
+        - .:/var/www/html/okjweb
+      ports:
+        - 8080:80
