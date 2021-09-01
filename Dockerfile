@@ -78,8 +78,9 @@ RUN { \
         echo 'post_max_size=${PHP_UPLOAD_LIMIT}'; \
     } > /usr/local/etc/php/conf.d/openkj.ini; \
     \
-    mkdir /var/www/data; \
-    copy * /var/www; \
+    copy *.php /var/www/html; \
+    copy *.inc /var/www/html; \
+    copy *.css /var/www/html; \
     rm -rf /var/www/Dockerfile; \
     chown -R www-data:root /var/www; \
     chmod -R g=u /var/www
